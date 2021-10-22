@@ -1,3 +1,4 @@
+require('dotenv').config();
 var createError = require("http-errors");
 var express = require("express");
 var cors = require("cors");
@@ -7,7 +8,7 @@ var logger = require("morgan");
 
 //   Firebase
 const admin = require("firebase-admin");
-const serviceAccount = require("./config/firebase/code-mug-9e7de-firebase-adminsdk-4xmef-d80e6a4f16.js");
+const serviceAccount = require("./config/firebase/firebasesdk-config").firebaseConfig;
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
