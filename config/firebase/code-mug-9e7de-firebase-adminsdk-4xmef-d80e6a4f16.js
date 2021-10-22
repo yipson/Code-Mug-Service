@@ -11,4 +11,4 @@ module.exports = {
     "auth_provider_x509_cert_url": process.env.FIREBASE_CONFIG_AUTH_PROVIDER_X509_CERT_URL,
     "client_x509_cert_url": process.env.FIREBASE_CONFIG_CLIENT_X509_CERT_URL
   }
-}
+};
