@@ -7,7 +7,7 @@ var logger = require("morgan");
 
 //   Firebase
 const admin = require("firebase-admin");
-const serviceAccount = require("./config/firebase/code-mug-9e7de-firebase-adminsdk-4xmef-d80e6a4f16.json");
+const serviceAccount = require("./config/firebase/code-mug-9e7de-firebase-adminsdk-4xmef-d80e6a4f16.js");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
