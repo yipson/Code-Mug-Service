@@ -52,7 +52,7 @@ function checkAuth(req, res, next) {
     res.status(401).send('Unauthorized');
   }
 }
-app.use('*', checkAuth);
+// app.use('*', checkAuth);
 
 
 // Redireccionamiento a controladores
